@@ -69,7 +69,7 @@ function Navigation() {
                 <Link to={"/Contact"} onClick={closeMenu}>Contact</Link>
             </div>
             <div id="navicon-container">
-                <img id="navicon" src={NavIcon} alt="" width="75px" />
+                <Link to={"/Home"}><img id="navicon" src={NavIcon} alt="" width="75px" /></Link>
             </div>
             <div className="desktop-nav">
                 <Link to={"/Home"}>Home</Link>
@@ -79,7 +79,7 @@ function Navigation() {
                 <Link to={"/Contact"}>Contact</Link>
             </div>
             <img id="phoneicon" src={Phone} alt="" width="30px" />
-            <button id="quotebutton">Get a Quote</button>
+            <Link to={"/Contact"} id="quotebutton">Get a Quote</Link>
         </div>
     )
 }

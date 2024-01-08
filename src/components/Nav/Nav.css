@@ -56,6 +56,7 @@ a{
     font-family: 'Poppins', sans-serif;
     font-weight: 300;
     transition: .2s;
+    color: black;
 }
 
 #quotebutton:hover{

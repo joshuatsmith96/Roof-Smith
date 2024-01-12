@@ -110,6 +110,14 @@ a{
     color: black;
 }
 
+.desktop-nav a{
+    transition: .3s;
+}
+
+.desktop-nav a:hover{
+    color: #2FB74D;
+}
+
 @media all and (min-width: 500px){
     #navicon{
         width: 100px;
@@ -158,7 +166,7 @@ a{
     .desktop-nav a{
         text-decoration: none;
         color: black;
-        font-size: 18px;
+        font-size: 16px;
         font-family: 'Poppins', sans-serif;
         font-weight: 300;
     }
@@ -170,6 +178,12 @@ a{
 
     #navicon-container{
         padding: 0px;
+    }
+}
+
+@media all and (min-width: 1200px){
+    .desktop-nav a{
+        font-size: 18px;
     }
 }
 

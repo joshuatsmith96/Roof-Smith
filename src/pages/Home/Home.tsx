@@ -1,7 +1,11 @@
+import './Home.css'
+//Components
+import Hero from "./Components/Hero"
+
 function Home(){
     return(
         <div className="Home">
-            <h1>HOME</h1>
+            <Hero />
         </div>
     )
 }

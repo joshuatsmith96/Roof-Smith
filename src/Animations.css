@@ -1,0 +1,14 @@
+.visible{
+    opacity: 1;
+    transition: .5s;
+}
+
+.swipeRight{
+    margin-left: 0px;
+    transition: 1s;
+}
+
+.swipeLeft{
+    margin-right: 0px;
+    transition: 1s;
+}

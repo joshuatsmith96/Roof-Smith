@@ -52,8 +52,21 @@ function Navigation() {
 
     const closeMenu = () => {
         let mobileMenu = document.getElementsByClassName("mobile-nav")[0]
-        mobileMenu.setAttribute('style', 'top: -100%;')
+        mobileMenu.setAttribute('style', 'top: -1500px;')
     }
+
+    let currentPos = window.scrollY;
+
+    window.addEventListener("scroll", function(){
+        let newPos = window.scrollY;
+        let nav = document.getElementsByClassName("Navigation")
+        if(newPos > currentPos ){
+            nav[0].setAttribute("style", "top: -100px")
+        } else {
+            nav[0].setAttribute("style", "top: 0px")
+        }
+        currentPos = newPos
+    })
 
     return (
         <div className="Navigation">

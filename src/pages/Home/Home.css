@@ -4,10 +4,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: url('../../assets/Images/HeroRoof.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    width: 100%;
+    background-image: url('../../assets/Images/HeroRoof.jpg');
 }
 
 .Hero-Filter{
@@ -26,8 +27,8 @@
     justify-content: center;
     align-items: center;
     width: 100%;
+    padding: 60px 0px;
     z-index: 2;
-    padding: 30px 0px;
 }
 
 .Hero-Content p{
@@ -50,7 +51,7 @@
 
 .Hero-Content p:last-of-type{
     margin-bottom: 30px;
-    color: white;
+    color: rgb(216, 216, 216);
 }
 
 .linkButton{
@@ -62,7 +63,120 @@
     text-decoration: none;
 }
 
+.Specialties{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.underline{
+    border: solid;
+    border-radius: 20px;
+    width: 140px;
+    color: #2FB74D;
+    margin-bottom: 50px;
+}
+
+.Specialties h1{
+    margin: 20px 0px;;
+    font-size: 28px;
+}
+
+.SpecialtiesTile{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 150px;
+    opacity: 0;
+    transition: 1s
+}
+
+.SpecialtiesTile:last-of-type{
+    margin-bottom: 80px
+}
+
+.SpecialtiesTile img{
+    width: 100%;
+}
+
+.SpecialtiesTile h1{
+    text-align: center;
+    font-size: 26px;
+    margin: 15px 0px;
+}
+
+.SpecialtiesTile p{
+    text-align: center;
+    font-size: 18px;
+    margin: 15px 20px;
+}
+
+.AboutSection{
+    background-color: #F2F2F2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 6%;
+}
+
+.aboutSectionImage{
+    width: 260px;
+    height: 260px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 100%;
+    box-shadow: 1px 1px 4px 1px rgb(138, 138, 138);
+    margin-bottom: 25px;
+    opacity: 0;
+    transition: 1s;
+}
+
+.AboutSection h1{
+    margin-bottom: 35px;
+}
+
+.AboutSectionContent{
+    opacity: 0;
+    transition: 1s;
+    margin-left: -100%;
+    width: 260px;
+}
+
+.LetsTalk{
+    background-image: url("../../assets/Images/Shingles.jpg");
+    background-position: center;
+    background-size: cover;
+    padding: 20px 20px;
+}
+
+.LetsTalk h1{
+    color: white;
+    margin-bottom: 10px;
+}
+
+@media all and (min-width: 350px){
+    .SpecialtiesTile{
+        width: 350px;
+    }
+
+    .SpecialtiesTile h1{
+        font-size: 32px;
+    }
+
+    .AboutSectionContent{
+        width: 330px;
+    }
+}
+
 @media all and (min-width: 600px) {
+    .Specialties h1:first-child{
+        font-size: 32px;
+    }
 
     .Hero-Content p{
         font-size: 18px;
@@ -78,13 +192,96 @@
         font-size: 18px;
         padding: 10px 50px;
     }
+
+    .AboutSectionContent{
+        width: 500px;
+    }
+}
+
+@media all and (min-width: 900px){
+    .AboutSection{
+        flex-direction: row-reverse;
+        justify-content: space-evenly;
+    }
+
+    .aboutSectionImage{
+        width: 300px;
+        height: 300px;
+    }
 }
 
 @media all and (min-width: 1000px) {
+    .Specialties h1:first-child{
+        font-size: 44px;
+    }
 
     .Hero-Content p{
         font-size: 26px;
         margin-bottom: 70px;
+        width: 800px
+    }
+    
+    .Hero-Content h1{
+        font-size: 48px;
+        margin-bottom: 60px;
+        width: 500px;
+    }
+    
+    .linkButton{
+        font-size: 22px;
+        padding: 10px 70px;
+        margin-bottom: 60px;
+    }
+}
+
+@media all and (min-width: 1100px){
+    .SpecialtiesTileContainer{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        align-items:flex-start;
+        justify-content: center;
+        gap: 2%;
+    }
+    
+    .SpecialtiesTile{
+        margin: 0;
+        padding: 0;
+    }
+}
+
+@media all and (min-width: 1200px){
+    .SpecialtiesTileContainer{
+        gap: 4%;
+    }
+    
+    .AboutSectionContent{
+        width: 500px;
+    }
+}
+
+@media all and (min-width: 1300px){
+    .AboutSection h1{
+        font-size: 44px;
+    }
+
+    .AboutSection p{
+        font-size: 20px;
+    }
+
+    .AboutSectionContent{
+        width: 700px;
+    }
+
+    .aboutSectionImage{
+        width: 400px;
+        height: 400px;
+    }
+}
+
+@media all and (min-width: 1500px) {
+    .Hero-Content p{
+        font-size: 32px;
+        width: 1000px;
     }
     
     .Hero-Content h1{
@@ -94,26 +291,12 @@
     }
     
     .linkButton{
-        font-size: 32px;
-        padding: 10px 50px;
-        margin-bottom: 60px;
-    }
-}
-
-@media all and (min-width: 1500px) {
-    .Hero-Content p{
-        font-size: 32px;
-        margin-bottom: 70px;
-    }
-    
-    .Hero-Content h1{
-        font-size: 75px;
-        margin-bottom: 60px;
-        width: 700px;
-    }
-    
-    .linkButton{
-        font-size: 32px;
+        font-size: 28px;
+        padding: 10px 100px;
         margin: 70px 0px;
+    }
+
+    .SpecialtiesTileContainer{
+        gap: 10%;
     }
 }

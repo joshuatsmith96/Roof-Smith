@@ -6,6 +6,7 @@
 .swipeRight{
     margin-left: 0px;
     transition: 1s;
+    transition-delay: .1s;
 }
 
 .swipeLeft{

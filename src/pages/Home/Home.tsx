@@ -5,6 +5,7 @@ import Hero from "./Components/Hero"
 import Specialties from './Components/Specialties'
 import AboutSection from './Components/AboutSection'
 import LetsTalk from './Components/LetsTalk'
+import ReviewSection from './Components/ReviewSection'
 
 
 function Home(){
@@ -14,6 +15,7 @@ function Home(){
             <Specialties />
             <AboutSection />
             <LetsTalk />
+            <ReviewSection />
         </div>
     )
 }

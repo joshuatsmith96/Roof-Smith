@@ -5,6 +5,7 @@ import { ParallaxProvider } from 'react-scroll-parallax'
 
 //Import Components
 import Navigation from './components/Nav/Nav'
+import Footer from './components/Footer/Footer'
 
 //Import Pages
 import Home from './pages/Home/Home'
@@ -43,35 +44,78 @@ window.addEventListener("scroll", function () {
   let AboutSectionContent = document.getElementsByClassName("AboutSectionContent")[0]
   let aboutSectionImage = document.getElementsByClassName("aboutSectionImage")[0]
 
+  //Review Tiles
+  let ReviewTile1 = document.getElementsByClassName("ReviewTile")[0]
+  let ReviewTile2 = document.getElementsByClassName("ReviewTile")[1]
+  let ReviewTile3 = document.getElementsByClassName("ReviewTile")[2]
+
 
   //If scrolling down, do...
   if (newPos > currentPos) {
+    //Checking Review Tile 1
+    if (checkViewable(ReviewTile1, 600) === true) {
+      ReviewTile1.setAttribute("class", "ReviewTile visible swipeLeftAdvanced")
+    }
+
+    //Checking Review Tile 2
+    if (checkViewable(ReviewTile2, 600) === true) {
+      ReviewTile2.setAttribute("class", "ReviewTile visible swipeLeftAdvanced")
+    }
+
+    //Checking Review Tile 3
+    if (checkViewable(ReviewTile3, 600) === true) {
+      ReviewTile3.setAttribute("class", "ReviewTile visible swipeLeftAdvanced")
+    }
+
+
+
     //Checking about 1
-    if (checkViewable(AboutSectionContent, 400) === true) {
+    if (checkViewable(AboutSectionContent, 1100) === true) {
       AboutSectionContent.setAttribute("class", "AboutSectionContent visible swipeRight")
     }
 
     //Checking about 2
-    if (checkViewable(aboutSectionImage, 400) === true) {
+    if (checkViewable(aboutSectionImage, 700) === true) {
       aboutSectionImage.setAttribute("class", "aboutSectionImage visible swipeLeft")
     }
 
+
+
     //Checking Specialty 1
-    if (checkViewable(Spec1, 300) === true) {
+    if (checkViewable(Spec1, 700) === true) {
       Spec1.setAttribute("class", "SpecialtiesTile visible")
     }
 
     //Checking Specialty 2
-    if (checkViewable(Spec2, 300) === true) {
+    if (checkViewable(Spec2, 700) === true) {
       Spec2.setAttribute("class", "SpecialtiesTile visible")
     }
 
     //Checking Specialty 3
-    if (checkViewable(Spec3, 300) === true) {
+    if (checkViewable(Spec3, 700) === true) {
       Spec3.setAttribute("class", "SpecialtiesTile visible")
     }
     //If scrolling up, do...
   } else {
+    //Checking Review Tile 1
+    if (checkViewable(ReviewTile1, 600) === false) {
+      ReviewTile1.setAttribute("class", "ReviewTile")
+    }
+
+    //Checking Review Tile 2
+    if (checkViewable(ReviewTile2, 600) === false) {
+      ReviewTile2.setAttribute("class", "ReviewTile")
+    }
+
+    //Checking Review Tile 3
+    if (checkViewable(ReviewTile3, 600) === false) {
+      ReviewTile3.setAttribute("class", "ReviewTile")
+    }
+
+
+
+
+
     //Checking about 1
     if (checkViewable(AboutSectionContent, 600) === false) {
       AboutSectionContent.setAttribute("class", "AboutSectionContent")
@@ -81,6 +125,12 @@ window.addEventListener("scroll", function () {
     if (checkViewable(aboutSectionImage, 600) === false) {
       aboutSectionImage.setAttribute("class", "aboutSectionImage")
     }
+
+
+
+
+
+
 
     //Checking Specialty 1
     if (checkViewable(Spec1, 600) !== true) {
@@ -134,6 +184,7 @@ function App() {
           <Route path="/Contact" element={<Contact />} />
         </Routes>
       </ParallaxProvider>
+      <Footer />
     </div>
   )
 }

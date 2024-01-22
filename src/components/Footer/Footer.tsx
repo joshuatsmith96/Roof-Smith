@@ -27,6 +27,9 @@ function Footer(){
                 <div className="Footer-Buttons">
                     <Link to="/Contact" className='Footer-Quote-Button'>Get a Quote</Link>
                     <div className="SocialButtons">
+                        <img src={X} alt="" />
+                        <img src={LinkedIn} alt="" />
+                        <img src={Facebook} alt="" />
                     </div>
                 </div>
             </div>

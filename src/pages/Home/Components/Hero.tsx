@@ -1,6 +1,4 @@
 import { Link } from 'react-router-dom'
-import { ParallaxBanner } from 'react-scroll-parallax'
-import heroImage from '../../../assets/Images/HeroRoof.jpg'
 
 function Hero() {
 

@@ -28,23 +28,23 @@ function Navigation() {
     let allMobileLinks = document.getElementsByClassName("mobile-nav")[0];
     console.log(allMobileLinks)
 
-    if(loc === "/"){
+    if(loc === "/Roof-Smith"){
         RemoveActive();
         allDesktopLinks.children[0].setAttribute("class", "active-link")
         allMobileLinks.children[1].setAttribute("class", "active-link")
-    } else if(loc === "/About"){
+    } else if(loc === "/Roof-Smith/About"){
         RemoveActive();
         allDesktopLinks.children[1].setAttribute("class", "active-link")
         allMobileLinks.children[2].setAttribute("class", "active-link")
-    } else if(loc === "/Services"){
+    } else if(loc === "/Roof-Smith/Services"){
         RemoveActive();
         allDesktopLinks.children[2].setAttribute("class", "active-link")
         allMobileLinks.children[3].setAttribute("class", "active-link")
-    } else if(loc === "/Projects"){
+    } else if(loc === "/Roof-Smith/Projects"){
         RemoveActive();
         allDesktopLinks.children[3].setAttribute("class", "active-link")
         allMobileLinks.children[4].setAttribute("class", "active-link")
-    } else if(loc === "/Contact"){
+    } else if(loc === "/Roof-Smith/Contact"){
         RemoveActive();
         allDesktopLinks.children[4].setAttribute("class", "active-link")
         allMobileLinks.children[5].setAttribute("class", "active-link")
@@ -75,24 +75,24 @@ function Navigation() {
                 <span className="closenavcontainer" onClick={closeMenu}>
                     x
                 </span>
-                <Link to={"/"} onClick={closeMenu}>Home</Link>
-                <Link to={"/About"} onClick={closeMenu}>About Us</Link>
-                <Link to={"/Services"} onClick={closeMenu}>Services</Link>
-                <Link to={"/Projects"} onClick={closeMenu}>Projects</Link>
-                <Link to={"/Contact"} onClick={closeMenu}>Contact</Link>
+                <Link to={"/Roof-Smith"} onClick={closeMenu}>Home</Link>
+                <Link to={"/Roof-Smith/About"} onClick={closeMenu}>About Us</Link>
+                <Link to={"/Roof-Smith/Services"} onClick={closeMenu}>Services</Link>
+                <Link to={"/Roof-Smith/Projects"} onClick={closeMenu}>Projects</Link>
+                <Link to={"/Roof-Smith/Contact"} onClick={closeMenu}>Contact</Link>
             </div>
             <div id="navicon-container">
                 <Link to={"/"}><img id="navicon" src={NavIcon} alt="" width="75px" /></Link>
             </div>
             <div className="desktop-nav">
-                <Link to={"/"}>Home</Link>
-                <Link to={"/About"}>About Us</Link>
-                <Link to={"/Services"}>Services</Link>
-                <Link to={"/Projects"}>Projects</Link>
-                <Link to={"/Contact"}>Contact</Link>
+                <Link to={"/Roof-Smith"}>Home</Link>
+                <Link to={"/Roof-Smith/About"}>About Us</Link>
+                <Link to={"/Roof-Smith/Services"}>Services</Link>
+                <Link to={"/Roof-Smith/Projects"}>Projects</Link>
+                <Link to={"/Roof-Smith/Contact"}>Contact</Link>
             </div>
             <img id="phoneicon" src={Phone} alt="" width="30px" />
-            <Link to={"/Contact"} id="quotebutton">Get a Quote</Link>
+            <Link to={"/Roof-Smith/Contact"} id="quotebutton">Get a Quote</Link>
         </div>
     )
 }

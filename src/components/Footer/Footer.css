@@ -124,6 +124,18 @@
     .Footer-Buttons{
         margin-top: 0px;
     }
+}
 
+@media all and (min-width: 750px) {
+    .Footer-Content{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: start;
+        margin-top: 60px;
+    }
 
+    .Footer-Buttons{
+        margin-top: 0px;
+    }
 }

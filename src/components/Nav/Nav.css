@@ -63,6 +63,11 @@ a{
     font-weight: 300;
     transition: .2s;
     color: black;
+    margin: 0px;
+}
+
+.desktop-nav a{
+    margin-bottom: 0px;
 }
 
 #quotebutton:hover{
@@ -96,7 +101,7 @@ a{
     transition: .2s;
 }
 
-.Navigation a{
+.mobile-nav a{
     margin-bottom: 20px;
 }
 

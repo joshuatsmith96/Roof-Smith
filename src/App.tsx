@@ -155,21 +155,6 @@ window.addEventListener("scroll", function () {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 function App() {
 
   return (
@@ -177,11 +162,11 @@ function App() {
       <Navigation />
       <ParallaxProvider>
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/About" element={<About />} />
-          <Route path="/Services" element={<Services />} />
-          <Route path="/Projects" element={<Projects />} />
-          <Route path="/Contact" element={<Contact />} />
+          <Route path="/Roof-Smith" element={<Home />} />
+          <Route path="/Roof-Smith/About" element={<About />} />
+          <Route path="/Roof-Smith/Services" element={<Services />} />
+          <Route path="/Roof-Smith/Projects" element={<Projects />} />
+          <Route path="/Roof-Smith/Contact" element={<Contact />} />
         </Routes>
       </ParallaxProvider>
       <Footer />

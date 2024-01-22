@@ -20,4 +20,20 @@ a{
     font-weight: 400;
 }
 
+.Page{
+    padding-top: 60px;
+}
+
+@media all and (min-width: 500px){
+    .Page{
+        padding-top: 100px;
+    }
+}
+
+@media all and (min-width: 800px){
+    .Page{
+        padding-top: 110px;
+    }
+}
+
 

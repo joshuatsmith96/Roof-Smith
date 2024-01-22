@@ -162,7 +162,7 @@ function App() {
       <Navigation />
       <ParallaxProvider>
         <Routes>
-          <Route path="/Roof-Smith/s" element={<Home />} />
+          <Route path="/Roof-Smith/" element={<Home />} />
           <Route path="/Roof-Smith/About" element={<About />} />
           <Route path="/Roof-Smith/Services" element={<Services />} />
           <Route path="/Roof-Smith/Projects" element={<Projects />} />

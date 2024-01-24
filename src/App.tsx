@@ -10,7 +10,7 @@ import Footer from './components/Footer/Footer'
 //Import Pages
 import Home from './pages/Home/Home'
 import About from './pages/About/About'
-import Services from './pages/Services'
+import Services from './pages/Services/Services'
 import Projects from './pages/Projects'
 import Contact from './pages/Contact'
 

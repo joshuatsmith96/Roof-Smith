@@ -11,11 +11,11 @@ function Footer(){
         <div className="Footer">
             <div className="Footer-Content">
                 <ul className='Footer-Nav'>
-                    <li><Link to="/">Home</Link></li>
-                    <li><Link to="/About">About Us</Link></li>
-                    <li><Link to="/Services">Services</Link></li>
-                    <li><Link to="/Projects">Projects</Link></li>
-                    <li><Link to="/Contact">Contact</Link></li>
+                    <li><Link to="/Roof-Smith/">Home</Link></li>
+                    <li><Link to="/Roof-Smith/About">About Us</Link></li>
+                    <li><Link to="/Roof-Smith/Services">Services</Link></li>
+                    <li><Link to="/Roof-Smith/Projects">Projects</Link></li>
+                    <li><Link to="/Roof-Smith/Contact">Contact</Link></li>
                 </ul>
                 <div className="Footer-Contact">
                     <h2>Contact us at:</h2>

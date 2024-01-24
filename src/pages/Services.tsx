@@ -1,7 +1,10 @@
+import Header from "../components/Header/Header"
+import ServicesImage from '../assets/Images/Roofing 1.jpg'
+
 function Services(){
     return(
         <div className="Services Page">
-            <h1>SERVICES - Under Construction</h1>
+            <Header Header="Services" Img={ServicesImage}/>
         </div>
     )
 }

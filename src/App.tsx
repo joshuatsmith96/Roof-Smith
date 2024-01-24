@@ -9,7 +9,7 @@ import Footer from './components/Footer/Footer'
 
 //Import Pages
 import Home from './pages/Home/Home'
-import About from './pages/About'
+import About from './pages/About/About'
 import Services from './pages/Services'
 import Projects from './pages/Projects'
 import Contact from './pages/Contact'
@@ -21,13 +21,18 @@ let currentPos = window.scrollY;
 let bodyRect = document.body.getBoundingClientRect()
 
 function checkViewable(el: any, speed: any) {
-  let elemRect = el.getBoundingClientRect();
-  let offset = (elemRect.top - bodyRect.top) - speed;
-  if (offset <= 0) {
-    return (true)
-  } else {
-    return (false)
-  }
+  if(el !== undefined){
+    let elemRect = el.getBoundingClientRect();
+
+    if(elemRect !== undefined){
+      let offset = (elemRect.top - bodyRect.top) - speed;
+    if (offset <= 0) {
+      return (true);
+    } else if (offset >= 0) {
+      return (false)
+    }
+    }
+  } 
 }
 
 
@@ -133,26 +138,22 @@ window.addEventListener("scroll", function () {
 
 
     //Checking Specialty 1
-    if (checkViewable(Spec1, 600) !== true) {
+    if (checkViewable(Spec1, 600) === false) {
       Spec1.setAttribute("class", "SpecialtiesTile")
     }
 
     //Checking Specialty 2
-    if (checkViewable(Spec2, 600) !== true) {
+    if (checkViewable(Spec2, 600) === false) {
       Spec2.setAttribute("class", "SpecialtiesTile")
     }
 
     //Checking Specialty 3
-    if (checkViewable(Spec3, 600) !== true) {
+    if (checkViewable(Spec3, 600) === false) {
       Spec3.setAttribute("class", "SpecialtiesTile")
     }
   }
   currentPos = newPos
 })
-
-
-
-
 
 
 function App() {

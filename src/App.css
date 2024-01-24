@@ -21,18 +21,25 @@ a{
 }
 
 .Page{
-    padding-top: 60px;
+    padding-top: 50px;
+}
+
+.Col{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 @media all and (min-width: 500px){
     .Page{
-        padding-top: 100px;
+        padding-top: 80px;
     }
 }
 
 @media all and (min-width: 800px){
     .Page{
-        padding-top: 110px;
+        padding-top: 85px;
     }
 }
 

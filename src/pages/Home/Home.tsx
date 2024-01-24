@@ -4,7 +4,7 @@ import '../../Animations.css'
 import Hero from "./Components/Hero"
 import Specialties from './Components/Specialties'
 import AboutSection from './Components/AboutSection'
-import LetsTalk from './Components/LetsTalk'
+import LetsTalk from '../../components/LetsTalk'
 import ReviewSection from './Components/ReviewSection'
 
 

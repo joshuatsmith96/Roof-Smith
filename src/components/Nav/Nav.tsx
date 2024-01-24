@@ -28,7 +28,7 @@ function Navigation() {
     let allMobileLinks = document.getElementsByClassName("mobile-nav")[0];
     console.log(allMobileLinks)
 
-    if(loc === "/Roof-Smith"){
+    if(loc === "/Roof-Smith/"){
         RemoveActive();
         allDesktopLinks.children[0].setAttribute("class", "active-link")
         allMobileLinks.children[1].setAttribute("class", "active-link")
@@ -75,7 +75,7 @@ function Navigation() {
                 <span className="closenavcontainer" onClick={closeMenu}>
                     x
                 </span>
-                <Link to={"/Roof-Smith"} onClick={closeMenu}>Home</Link>
+                <Link to={"/Roof-Smith/"} onClick={closeMenu}>Home</Link>
                 <Link to={"/Roof-Smith/About"} onClick={closeMenu}>About Us</Link>
                 <Link to={"/Roof-Smith/Services"} onClick={closeMenu}>Services</Link>
                 <Link to={"/Roof-Smith/Projects"} onClick={closeMenu}>Projects</Link>
@@ -85,7 +85,7 @@ function Navigation() {
                 <Link to={"/"}><img id="navicon" src={NavIcon} alt="" width="75px" /></Link>
             </div>
             <div className="desktop-nav">
-                <Link to={"/Roof-Smith"}>Home</Link>
+                <Link to={"/Roof-Smith/"}>Home</Link>
                 <Link to={"/Roof-Smith/About"}>About Us</Link>
                 <Link to={"/Roof-Smith/Services"}>Services</Link>
                 <Link to={"/Roof-Smith/Projects"}>Projects</Link>

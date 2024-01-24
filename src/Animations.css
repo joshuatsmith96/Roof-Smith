@@ -26,3 +26,15 @@
     transform: rotate3d(1, 1, 1, 0deg);
     transition: .5s;
 }
+
+.slideshow-image{
+    animation-delay: 3s;
+    animation: slide 1.5s infinite;
+}
+
+
+/* KEYFRAME ANIMATIONS */
+@keyframes slide{
+    50% {opacity: 0}
+    100% {opacity: 1}
+}

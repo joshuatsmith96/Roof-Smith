@@ -9,9 +9,12 @@ function MeetTheTeam() {
 
   return (
     <div className="MeetTheTeam">
-        <MeetTheTeamTile Image={Guy1} Name="John Smith" Title="CO-CEO / FOUNDER"/>
-        <MeetTheTeamTile Image={Guy2} Name="Lance Smith" Title="CO-CEO / FOUNDER"/>
-        <MeetTheTeamTile Image={Girl1} Name="Brenda Lee" Title="HUMAN RESOURCES"/>
+      <h1>Meet The Team</h1>
+      <div className="MeetTheTeamContainer">
+      <MeetTheTeamTile Image={Guy1} Name="John Smith" Title="CO-CEO / FOUNDER" />
+      <MeetTheTeamTile Image={Guy2} Name="Lance Smith" Title="CO-CEO / FOUNDER" />
+      <MeetTheTeamTile Image={Girl1} Name="Brenda Lee" Title="HUMAN RESOURCES" />
+      </div>
     </div>
   )
 }

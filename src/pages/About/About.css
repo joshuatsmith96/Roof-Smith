@@ -99,7 +99,12 @@
     display: none;
 }
 
-.MeetTheTeam{
+.MeetTheTeam h1{
+    text-align: center;
+    margin: 20px 0px;
+}
+
+.MeetTheTeamContainer{
     padding: 10px;
     display: flex;
     flex-direction: row;
@@ -183,7 +188,7 @@
 }
 
 @media all and (min-width: 1000px) {
-    .MeetTheTeam{
+    .MeetTheTeamContainer{
         justify-content: space-evenly;
         margin: 60px 0px;
     }
@@ -277,7 +282,7 @@
 }
 
 @media all and (min-width: 1500px){
-    .MeetTheTeam{
+    .MeetTheTeamContainer{
         justify-content: space-evenly;
         margin: 80px 0px;
     }

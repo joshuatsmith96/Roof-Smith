@@ -21,18 +21,18 @@ let currentPos = window.scrollY;
 let bodyRect = document.body.getBoundingClientRect()
 
 function checkViewable(el: any, speed: any) {
-  if(el !== undefined){
+  if (el !== undefined) {
     let elemRect = el.getBoundingClientRect();
 
-    if(elemRect !== undefined){
+    if (elemRect !== undefined) {
       let offset = (elemRect.top - bodyRect.top) - speed;
-    if (offset <= 0) {
-      return (true);
-    } else if (offset >= 0) {
-      return (false)
+      if (offset <= 0) {
+        return (true);
+      } else if (offset >= 0) {
+        return (false)
+      }
     }
-    }
-  } 
+  }
 }
 
 
@@ -53,6 +53,12 @@ window.addEventListener("scroll", function () {
   let ReviewTile1 = document.getElementsByClassName("ReviewTile")[0]
   let ReviewTile2 = document.getElementsByClassName("ReviewTile")[1]
   let ReviewTile3 = document.getElementsByClassName("ReviewTile")[2]
+
+  //Choose Us Tiles
+  let ChooseUsTile1 = document.getElementsByClassName("ChooseUsTile")[0]
+  let ChooseUsTile2 = document.getElementsByClassName("ChooseUsTile")[1]
+  let ChooseUsTile3 = document.getElementsByClassName("ChooseUsTile")[2]
+  let ChooseUsTile4 = document.getElementsByClassName("ChooseUsTile")[3]
 
 
   //If scrolling down, do...
@@ -99,6 +105,31 @@ window.addEventListener("scroll", function () {
     //Checking Specialty 3
     if (checkViewable(Spec3, 700) === true) {
       Spec3.setAttribute("class", "SpecialtiesTile visible")
+    }
+
+
+
+
+
+
+    //Checking ChooseUs Tiles
+    if (checkViewable(ChooseUsTile1, 600) === true) {
+      ChooseUsTile1.setAttribute("class", "ChooseUsTile visible swipeLeftAdvanced")
+    }
+
+    if (checkViewable(ChooseUsTile2, 600) === true) {
+      console.log("DETECTED")
+      ChooseUsTile2.setAttribute("class", "ChooseUsTile visible swipeLeftAdvanced")
+    }
+
+    if (checkViewable(ChooseUsTile3, 600) === true) {
+      console.log("DETECTED")
+      ChooseUsTile3.setAttribute("class", "ChooseUsTile visible swipeLeftAdvanced")
+    }
+
+    if (checkViewable(ChooseUsTile4, 600) === true) {
+      console.log("DETECTED")
+      ChooseUsTile4.setAttribute("class", "ChooseUsTile visible swipeLeftAdvanced")
     }
     //If scrolling up, do...
   } else {
@@ -150,6 +181,26 @@ window.addEventListener("scroll", function () {
     //Checking Specialty 3
     if (checkViewable(Spec3, 600) === false) {
       Spec3.setAttribute("class", "SpecialtiesTile")
+    }
+
+
+
+
+
+    if (checkViewable(ChooseUsTile1, 600) === false) {
+      ChooseUsTile1.setAttribute("class", "ChooseUsTile")
+    }
+
+    if (checkViewable(ChooseUsTile2, 600) === false) {
+      ChooseUsTile2.setAttribute("class", "ChooseUsTile")
+    }
+
+    if (checkViewable(ChooseUsTile3, 600) === false) {
+      ChooseUsTile3.setAttribute("class", "ChooseUsTile")
+    }
+
+    if (checkViewable(ChooseUsTile4, 600) === false) {
+      ChooseUsTile4.setAttribute("class", "ChooseUsTile")
     }
   }
   currentPos = newPos

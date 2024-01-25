@@ -1,3 +1,4 @@
+import '../../Animations.css'
 import './About.css'
 
 //Components

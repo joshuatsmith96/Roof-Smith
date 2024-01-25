@@ -1,5 +1,5 @@
 .visible{
-    opacity: 1;
+    opacity: 1 !important;
     transition: .5s;
 }
 
@@ -8,6 +8,10 @@
 }
 
 .visible:nth-child(3){
+    transition-delay: .2s
+}
+
+.visible:nth-child(4){
     transition-delay: .2s
 }
 
@@ -23,7 +27,7 @@
 }
 
 .swipeLeftAdvanced{
-    transform: rotate3d(1, 1, 1, 0deg);
+    transform: rotate3d(1, 1, 1, 0deg) !important;
     transition: .5s;
 }
 

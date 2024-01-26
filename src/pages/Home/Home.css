@@ -11,6 +11,26 @@
     background-image: url('../../assets/Images/HeroRoof.jpg');
 }
 
+.goBackButton{
+    top: 0;
+    position: absolute;
+    z-index: 19;
+    padding: 25px;
+}
+
+#goBackButton-Link-Visible{
+    display: block;
+}
+
+#Invisible{
+    display: none;
+}
+
+.goBackButton a{
+    color: white;
+    text-decoration: none;
+}
+
 .Hero-Filter{
     position: absolute;
     top: 0;

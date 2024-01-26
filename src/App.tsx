@@ -13,6 +13,7 @@ import About from './pages/About/About'
 import Services from './pages/Services/Services'
 import Projects from './pages/Projects'
 import Contact from './pages/Contact'
+import ServicePageTemplate from './pages/Services/ServiceTemplatePage/ServicePageTemplate'
 
 
 
@@ -217,6 +218,7 @@ function App() {
           <Route path="/Roof-Smith/" element={<Home />} />
           <Route path="/Roof-Smith/About" element={<About />} />
           <Route path="/Roof-Smith/Services" element={<Services />} />
+          <Route path="/Roof-Smith/Services/*" element={<ServicePageTemplate />} />
           <Route path="/Roof-Smith/Projects" element={<Projects />} />
           <Route path="/Roof-Smith/Contact" element={<Contact />} />
         </Routes>
